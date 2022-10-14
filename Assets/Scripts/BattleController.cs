@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class PartyManager : MonoBehaviour
+public class BattleController : MonoBehaviour
 {
     [Header("Map Settings")]
     [SerializeField]
@@ -18,14 +19,13 @@ public class PartyManager : MonoBehaviour
 
     [SerializeField]
     private GameObject playerMonsterPrefab;
-
-    [SerializeField]
-    private PlayerPartySO team;
+    [SerializeField] public PlayerPartySO team;
+    [SerializeField] public BattleData battleData;
 
     private void Awake()
     {
-        int i = 0;
-        foreach ( MonsterSO member in team.party)
+        var i = 0;
+        foreach (MonsterSO member in team.party)
         {
             GameObject newPlayerMonster = Instantiate(
                 playerMonsterPrefab,
@@ -36,14 +36,22 @@ public class PartyManager : MonoBehaviour
             text.GetComponent<TextMeshPro>().SetText(""+member.attack);
             
             i++;
+            var characterData = new CharacterState();
+            characterData.baseCharacter = member;
+            characterData.stance = Stance.Attack;
+            battleData.player.Add(characterData);
         }
     }
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        // TODO: add input system and input system abstraction SO
-        // TODO: add UI layer over ground tilemap to indicate current active monster and available position to move in
-        // TODO: add camera control script, tweens and slows down from one character to next
         
     }
 }
