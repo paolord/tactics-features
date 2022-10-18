@@ -10,6 +10,11 @@ public struct CharacterState
     public Vector2 position;
 }
 
+public enum Stance {
+    Attack,
+    Defense
+}
+
 [CreateAssetMenu(fileName = "BattleData", menuName = "Scriptable Objects/One-offs/Battle Data")]
 public class BattleData : ScriptableObject
 {

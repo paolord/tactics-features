@@ -4,10 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public enum Stance {
-    Attack,
-    Defense
-}
+
 
 // public enum Result
 // {
@@ -28,8 +25,6 @@ public class MonsterSO : ScriptableObject
 
     [SerializeField] public Sprite sprite;
 
-    [SerializeField] public Stance stance;
-    
     /// <summary>
     /// Character receives attack and decides to win or lose
     /// </summary>

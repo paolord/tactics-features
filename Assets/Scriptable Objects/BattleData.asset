@@ -12,3 +12,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9022a0bb7c8c0d4eafae612f4de4dff, type: 3}
   m_Name: BattleData
   m_EditorClassIdentifier: 
+  player:
+  - baseCharacter: {fileID: 0}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: 9e66c225609aade409905f4d1442c784, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: 9e66c225609aade409905f4d1442c784, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: 9e66c225609aade409905f4d1442c784, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: 9e66c225609aade409905f4d1442c784, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: 9e66c225609aade409905f4d1442c784, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: 9e66c225609aade409905f4d1442c784, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: 9e66c225609aade409905f4d1442c784, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: 9e66c225609aade409905f4d1442c784, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: b65da5280b34ed1449b934fdbea989a4, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: aa6cb3ec94afcaa4b97de29c21f898a8, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  - baseCharacter: {fileID: 11400000, guid: f50002dfc3daedf4496fca5ce9935edc, type: 2}
+    stance: 0
+    position: {x: 0, y: 0}
+  cpu: []

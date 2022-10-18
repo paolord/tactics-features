@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Object = UnityEngine.Object;
 
 public class BattleController : MonoBehaviour
 {
@@ -13,15 +14,19 @@ public class BattleController : MonoBehaviour
 
     [SerializeField]
     private Tilemap collisions;
-    [Header("Player Settings")]
-    [SerializeField]
-    private Vector3[] startingPoints;
 
+    [SerializeField] private FormationData formation;
+    
+    [Header("Player Settings")]
     [SerializeField]
     private GameObject playerMonsterPrefab;
     [SerializeField] public PlayerPartySO team;
     [SerializeField] public BattleData battleData;
 
+    [Header("CPU Player")] 
+    [SerializeField]
+    private EncounterData encounter;
+    
     private void Awake()
     {
         var i = 0;
@@ -29,7 +34,7 @@ public class BattleController : MonoBehaviour
         {
             GameObject newPlayerMonster = Instantiate(
                 playerMonsterPrefab,
-                new Vector3(startingPoints[i].x, startingPoints[i].y, -5),
+                new Vector3(formation.playerPositions[i].x, formation.playerPositions[i].y, -5),
                 Quaternion.identity);
             newPlayerMonster.GetComponent<SpriteRenderer>().sprite = member.sprite;
             var text = newPlayerMonster.transform.GetChild(0).gameObject;
@@ -40,6 +45,19 @@ public class BattleController : MonoBehaviour
             characterData.baseCharacter = member;
             characterData.stance = Stance.Attack;
             battleData.player.Add(characterData);
+        }
+
+        var j = 0;
+        foreach (var enemy in encounter.enemies)
+        {
+            var newEnemy = Instantiate(
+                playerMonsterPrefab,
+                new Vector3(formation.enemyPositions[j].x, formation.enemyPositions[j].y, -5),
+                Quaternion.identity);
+            newEnemy.GetComponent<SpriteRenderer>().sprite = enemy.sprite;
+            var text = newEnemy.transform.GetChild(0).gameObject;
+            text.GetComponent<TextMeshPro>().SetText(""+enemy.attack);
+            j++;
         }
     }
 
